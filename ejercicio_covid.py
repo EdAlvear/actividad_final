@@ -56,6 +56,10 @@ tipos_casos = data.groupby('Ubicación del caso').count()
 print(tipos_casos['ID'].sort_values(ascending=False))
 
 # Ejercicio 11
-dep_conta = data.groupby('Nombre del departamento').count()
+dep_conta = data.groupby('Departamentos con mas casos de contagiados: ').count()
 top_10_dep = dep_conta['ID'].sort_values(ascending=False).head(10)
 print(top_10_dep)
+
+# Ejercicio 12
+dep_falle = fallecidas.groupby('Departamentos con mas casos de fallecidos: ').count()
+print(dep_falle['ID'].sort_values(ascending=False).head(10))
