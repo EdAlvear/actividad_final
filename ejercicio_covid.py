@@ -27,3 +27,7 @@ print('El número de municipios afectados es: ' + str(len(municipios)))
 
 # Ejercicio 3
 print('Los Municipios afectados son: \n' + str(municipios))
+
+# Ejercicio 4
+atencion_casa = data[data['Ubicación del caso'] == 'Casa']
+print('El numero de personas en casa es: ' + str(len(atencion_casa)))
