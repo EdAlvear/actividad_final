@@ -45,7 +45,7 @@ tipos_casos = data.groupby('Tipos de contagio').count()
 print(tipos_casos['ID'].sort_values(ascending=False))
 
 # Ejercicio 8
-departamentos = data['Nombre del departamento'].unique()
+departamentos = data['Número de departamentos afectados: '].unique()
 print('numero de departamentos afectados: ' + str(len(departamentos)))
 
 # Ejercicio 9
@@ -63,3 +63,9 @@ print(top_10_dep)
 # Ejercicio 12
 dep_falle = fallecidas.groupby('Departamentos con mas casos de fallecidos: ').count()
 print(dep_falle['ID'].sort_values(ascending=False).head(10))
+
+# Ejercicio 13
+dep_recu = recuperados.groupby('Departamentos con mas casos de recuperados: ').count()
+print(dep_recu['ID'].sort_values(ascending=False).head(10))
+
+
