@@ -98,3 +98,9 @@ print(pais_procedencia['ID'].sort_values(ascending=False))
 
 # Ejercicio 21
 print(data.sort_values(ascending=False, by='Fecha donde se presentaron contagios:'))
+
+# Ejercicio 22
+tasa_mortalidad = (len(fallecidas) / len(data)) * 100
+tasa_recuperacion = (len(recuperados) / len(data)) * 100
+print('La tasa de mortalidad en Colombia es: ' + "{:.6f}".format(tasa_mortalidad))
+print('La tasa de recuperación en colombia es: ' + "{:.6f}".format(tasa_recuperacion))
