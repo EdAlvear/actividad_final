@@ -83,3 +83,7 @@ print(mun_recu['ID'].sort_values(ascending=False).head(10))
 
 # Ejercicio 17
 print(dep_conta)
+
+# Ejercicio 18
+contageado_sexo = data.groupby('Sexo')
+print(contageado_sexo.count()['ID'])
