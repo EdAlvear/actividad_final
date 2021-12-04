@@ -47,3 +47,6 @@ print(tipos_casos['ID'].sort_values(ascending=False))
 # Ejercicio 8
 departamentos = data['Nombre del departamento'].unique()
 print('numero de departamentos afectados: ' + str(len(departamentos)))
+
+# Ejercicio 9
+print('Los departamentos afectados son: \n' + str(departamentos))
