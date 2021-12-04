@@ -95,3 +95,6 @@ print(data.groupby(list_by)['Edad: '].mean())
 # Ejercicio 20
 pais_procedencia = data.groupby('Numero de contagiados por país de procedencia: ').count()
 print(pais_procedencia['ID'].sort_values(ascending=False))
+
+# Ejercicio 21
+print(data.sort_values(ascending=False, by='Fecha donde se presentaron contagios:'))
