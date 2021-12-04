@@ -111,3 +111,8 @@ print(dep_falle['ID'] / len(data) * 100)
 print('Tasa de recuperación en el departamento:')
 print(dep_recu['ID'] / len(data) * 100)
 
+# Ejercicio 24
+print('Tasa de mortalidad en la Ciudad:')
+print(mun_falle['ID'] / len(data) * 100)
+print('Tasa de recuperación en la Ciudad:')
+print(mun_recu['ID'] / len(data) * 100)
