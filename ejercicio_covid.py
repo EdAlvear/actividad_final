@@ -104,3 +104,10 @@ tasa_mortalidad = (len(fallecidas) / len(data)) * 100
 tasa_recuperacion = (len(recuperados) / len(data)) * 100
 print('La tasa de mortalidad en Colombia es: ' + "{:.6f}".format(tasa_mortalidad))
 print('La tasa de recuperación en colombia es: ' + "{:.6f}".format(tasa_recuperacion))
+
+# Ejercicio 23
+print('Tasa de mortalidad en el departamento:')
+print(dep_falle['ID'] / len(data) * 100)
+print('Tasa de recuperación en el departamento:')
+print(dep_recu['ID'] / len(data) * 100)
+
