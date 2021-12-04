@@ -125,3 +125,6 @@ print(data.groupby(['Nombre de la Ciudad'])['Edad'].mean())
 
 # Ejercicio 27
 aten = data.groupby('Fecha del diagnóstico')['ID'].count()
+
+# Ejercicio 30
+print(data.groupby('Edad')['ID'].count().sort_values(ascending=False))
