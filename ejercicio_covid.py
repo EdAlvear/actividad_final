@@ -118,4 +118,7 @@ print('Tasa de recuperación en la Ciudad:')
 print(mun_recu['ID'] / len(data) * 100)
 
 # Ejercicio 25
-print(data.groupby(['Ubicación del caso'])['ID'].count())
+print(data.groupby(['Nombre municipio','Ubicación del caso'])['ID'].count())
+
+# Ejercicio 26
+print(data.groupby(['Nombre de la Ciudad'])['Edad'].mean())
