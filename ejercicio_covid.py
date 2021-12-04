@@ -43,3 +43,7 @@ print('El numero de personas fallecidas es: ' + str(len(fallecidas)))
 # Ejercicio 7
 tipos_casos = data.groupby('Tipos de contagio').count()
 print(tipos_casos['ID'].sort_values(ascending=False))
+
+# Ejercicio 8
+departamentos = data['Nombre del departamento'].unique()
+print('numero de departamentos afectados: ' + str(len(departamentos)))
