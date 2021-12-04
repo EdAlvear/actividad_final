@@ -137,3 +137,7 @@ print(por_atencion.sort_values(ascending=False) / len(data) * 100)
 por_atencion.plot(subplots=True, kind='bar', title='32)')
 plt.show()
 
+# Ejercicio 33
+por_sexo = data.groupby('Sexo')['ID'].count()
+por_sexo.plot(subplots=True, kind='bar', title='33)')
+plt.show()
