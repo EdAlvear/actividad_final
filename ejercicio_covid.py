@@ -80,3 +80,6 @@ print(mun_falle['ID'].sort_values(ascending=False).head(10))
 # Ejercicio 16
 mun_recu = recuperados.groupby('Municipios con mas casos de recuperados: ').count()
 print(mun_recu['ID'].sort_values(ascending=False).head(10))
+
+# Ejercicio 17
+print(dep_conta)
