@@ -122,3 +122,6 @@ print(data.groupby(['Nombre municipio','Ubicación del caso'])['ID'].count())
 
 # Ejercicio 26
 print(data.groupby(['Nombre de la Ciudad'])['Edad'].mean())
+
+# Ejercicio 27
+aten = data.groupby('Fecha del diagnóstico')['ID'].count()
