@@ -39,3 +39,7 @@ print('El numero de personas recuperadas es: ' + str(len(recuperados)))
 # Ejercico 6
 fallecidas = data[data['Ubicación del caso'] == 'Fallecido']
 print('El numero de personas fallecidas es: ' + str(len(fallecidas)))
+
+# Ejercicio 7
+tipos_casos = data.groupby('Tipos de contagio').count()
+print(tipos_casos['ID'].sort_values(ascending=False))
