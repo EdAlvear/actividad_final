@@ -24,3 +24,6 @@ print('El numero de contagios es: ' + str(len(data)))
 # Ejercicio 2
 municipios = data['Nombre municipio'].unique()
 print('El número de municipios afectados es: ' + str(len(municipios)))
+
+# Ejercicio 3
+print('Los Municipios afectados son: \n' + str(municipios))
