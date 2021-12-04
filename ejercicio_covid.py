@@ -141,3 +141,8 @@ plt.show()
 por_sexo = data.groupby('Sexo')['ID'].count()
 por_sexo.plot(subplots=True, kind='bar', title='33)')
 plt.show()
+
+# Ejercicio 34
+por_tipo = data.groupby('Tipo de contagio')['ID'].count()
+por_tipo.plot(subplots=True, kind='bar', title='34)')
+plt.show()
