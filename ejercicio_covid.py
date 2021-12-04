@@ -68,4 +68,7 @@ print(dep_falle['ID'].sort_values(ascending=False).head(10))
 dep_recu = recuperados.groupby('Departamentos con mas casos de recuperados: ').count()
 print(dep_recu['ID'].sort_values(ascending=False).head(10))
 
-
+# Ejercicio 14
+mun_conta = data.groupby('Municipios con mas casos de contagiados: ').count()
+top_10_mun = mun_conta['ID'].sort_values(ascending=False).head(10)
+print(top_10_mun)
